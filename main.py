@@ -13,7 +13,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 # AI-powered bio generator
-@app.route("/generate_bio", methods=["POST"])
+@app.route("/generate_bio", methods=["GET"])
 def generate_bio():
     try:
         print(f"🚀 Received {request.method} request on /generate_bio")  # Debugging
