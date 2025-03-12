@@ -8,8 +8,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS to allow cross-origin requests
 
 # OpenAI API Key
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY",
-                           "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")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 
